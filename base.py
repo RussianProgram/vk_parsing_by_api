@@ -6,9 +6,9 @@ from logic import posts_text
 def main():
     #https://api.vk.com/method/wall.get?user_id=210700286&v=5.52
     group_id="-54530371" #id группы которую мы парсим
-    access_token = "df439f51df439f51df439f51efdf3628e1ddf43df439f5180affe39047548ba50381df8"#Сервисный ключ доступа
+    access_token = "df4...81df8"#Сервисный ключ доступа
     version = 5.52
-    offset = 0
+    offset = 0 #смещение постов
     count = 50 #кол-во "парсируемых" постов
     r = requests.get('https://api.vk.com/method/wall.get',params={'owner_id': group_id,
                                                                   'count': count,
